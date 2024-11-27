@@ -1,11 +1,17 @@
 import {
+  IconBrain,
+  IconPassword,
+  IconReport,
+  IconUserEdit,
+  IconUsers,
+} from "@tabler/icons-react";
+import {
   IconAperture,
-  IconCopy,
   IconLayoutDashboard,
   IconLogin,
   IconMoodHappy,
-  IconTypography,
   IconUserPlus,
+  IconCubePlus,
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
@@ -23,19 +29,57 @@ const Menuitems = [
     href: "/",
   },
   {
-    navlabel: true,
-    subheader: "Utilities",
+    id: uniqueId(),
+    title: "Alterar cadastro",
+    icon: IconUserEdit,
+    href: "/",
   },
   {
     id: uniqueId(),
-    title: "Typography",
-    icon: IconTypography,
+    title: "Alterar senha",
+    icon: IconPassword,
+    href: "/",
+  },
+  {
+    navlabel: true,
+    subheader: "Cadastro de organizações",
+  },
+  {
+    id: uniqueId(),
+    title: "Organizações",
+    icon: IconCubePlus,
+    href: "/organization",
+  },
+  {
+    navlabel: true,
+    subheader: "Cadastro de membros",
+  },
+  {
+    id: uniqueId(),
+    title: "Membros",
+    icon: IconUserPlus,
+    href: "/member",
+  },
+  {
+    navlabel: true,
+    subheader: "Fábrica de Líderes",
+  },
+  {
+    id: uniqueId(),
+    title: "Classes",
+    icon: IconBrain,
     href: "/utilities/typography",
   },
   {
     id: uniqueId(),
-    title: "Shadow",
-    icon: IconCopy,
+    title: "Membros",
+    icon: IconUsers,
+    href: "/utilities/shadow",
+  },
+  {
+    id: uniqueId(),
+    title: "Relatórios",
+    icon: IconReport,
     href: "/utilities/shadow",
   },
   {
